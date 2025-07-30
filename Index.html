@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowPro Solutions</title>
+    <link rel="stylesheet" href="Indexstyle.css" />
+</head> 
+<body>
+     <header>
+        <button id="toggle-mode" class="btn small">Toggle Dark Mode</button>
+        <div class="container">
+           <h1>GrowPro Solutions</h1>
+           <nav>
+             <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+             </ul>
+          </nav>
+        </div>  
+     </header>
+
+     <!--- Hero Section-->
+     <section id="hero" class="hero">
+       <h2>Your Growth Partner</h2>
+       <p>We help businesses grow with digital strategy and technology.</p>
+       <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+
+    <!--about-->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>GrowPro is a digital Solutions company helping small and medium businesses reach their full potential through technology.</p>
+    </section>
+
+ 
+
+    <!--Services-->
+    <section id="Services" class="cards">
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>We build fast, responsive websites to grow your online presence.</p>
+        </div>
+        <div class="card">
+            <h3>SEO Optimization</h3>
+            <p>Improve your visibility on search engines and get more traffic.</p>
+        </div>
+        <div class="card">
+            <h3>Marketing Strategy</h3>
+            <p>Plan and execute campaigns that convert and retain customers.</p>
+        </div>
+    </section>
+      
+    <!--contact form-->
+    <section id="Contact" class="Contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!--testimonals sectoion-->
+
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <p>"GrowPro transformed our business! We saw a 200% increase in leads."</p>
+                <h4>- Ravi Kumar, CEO of TechSpark</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Amazing team! Thier web design and SEO services are top-notch."</p>
+                <h4>- Anitha sharma, Founder of GreenLeaf</h4>
+            </div>
+        </div>
+
+    </section>
+
+    <!--fade In-->
+
+    <section id="about" class="about fade-in">...</section>
+    <section id="services" class="cards fade-in">...</section>
+    <section id="testimonials fade-in">...</section>
+    <section id="Contact" class="contact fade-in ">...</section>
+
+   <!--footer -->
+     <footer>
+        <p>&copy; 2025 GrowPro Solutions. All rights reserved.</p>
+     </footer>
+     <script>
+        const toggleBtn = document.getElementById('toggle-mode');
+        toggleBtn.addEventListener('click',() => {
+            document.body.classList.toggle("dark-mode");
+        });
+     </script>
+</body>   
+</html>
